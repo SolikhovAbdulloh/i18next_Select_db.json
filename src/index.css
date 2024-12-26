@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* app-container */
+.app-container {
+  width: 90%;
+  max-width: 380px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* language-select */
+.language-select {
+  font-size: 16px;
+  background-color: #f4f7fa;
+  border-radius: 12px;
+  padding: 12px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.language-select:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.language-select .ant-select-selector {
+  padding: 0 !important; /* remove padding for clean look */
+  border-radius: 12px !important; /* ensure rounded corners */
+}
+
+/* option-item */
+.option-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  transition: background-color 0.2s ease;
+  border-radius: 10px;
+}
+
+.option-item:hover {
+  background-color: #e6f7ff; /* Lighter blue on hover */
+}
+
+/* avatar */
+.avatar {
+  margin-left: 10px;
+  border-radius: 50%; /* Ensure round shape */
+}
+
+/* content-container */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 400px;
+}
+
+.content-item {
+  color: #0078d4;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.content-item:hover {
+  color: #005fa3;
+}
+
+/* language-name */
+.language-name {
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+}
